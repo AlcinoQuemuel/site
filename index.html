@@ -80,10 +80,31 @@
                 Endereço: Rua dos Bobos, 0
             </address>
 
-            <form action="">
-                <label for="Nome">nome: </label>
-                <input type="text" id="nome" name="nome"><br>
-                <label for="email">email: </label>
+            <<form action="">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" required> <br>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required> <br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone" id="telefone" required> <br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto"
+                <!--Aqui é um campo de seleção, onde o usuário pode escolher uma opção de um menu suspenso.-->
+                    <option value="orcamento">Orçamento</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="outro">Outro</option>
+                </select> <br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5" required></textarea> <br>
+
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">Desejo receber a nossa newsletter? Conteúdos todas quintas-feiras.</quintas-feiras></label> <br>
+
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </footer>
